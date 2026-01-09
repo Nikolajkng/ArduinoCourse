@@ -31,13 +31,13 @@ int main() {
   // Create a Car value and call the function 1
   struct Car myCar;
   myCar.year = 2016;
-  strcpy("BMW", myCar.make);
+  strcpy(myCar.make, "BMW");
   acceptCar(myCar);
 
   // call the function 2
   struct Car myBetterCar;
-  myCar.year = 2026;
-  strcpy("Mercedes", myCar.make);
+  myBetterCar.year = 2026;
+  strcpy(myBetterCar.make, "Mercedes");
 
   struct Car *p = &myBetterCar;
   acceptCarBetter(p);
